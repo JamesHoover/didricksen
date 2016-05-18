@@ -1,0 +1,287 @@
+/* --------------------------------------------------
+** style.css
+** Stylesheet for www.didricksenconst.com
+** Author: James Hoover (jamesfhoover@gmail.com)
+** Copyright: 2016
+** -------------------------------------------------- */
+/* $HTML ELEMENTS
+================================================== */
+/* Typography
+------------------------- */
+html { 
+  background-color: #FFF5C6;
+  color: rgba(0,0,0,.87);
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+}
+html, body {
+	height: 	 100%;
+  font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {}
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2.125em;}
+h4 {font-size: 2em;}
+h5 {font-size: 1.875em;}
+h6 {font-size: 1.5em;}
+ul, li, span, p {font-family: 'Raleway', sans-serif; text-align: justify;}
+p {
+  font-family: 'Raleway', sans-serif;
+	font-size: 		1.25em;
+  line-height: 	1.5;
+  padding-bottom: 1em;
+  text-align: justify;
+  max-width: 650px;
+}
+img {width: 100%;}
+/* Links
+------------------------- */
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+/*  -webkit-transition: all .3s ease-out;
+  -moz-transition:    all .3s ease-out;
+  -o-transition:      all .3s ease-out;
+  transition:         all .3s ease-out;*/
+}
+a:hover          {color: red;}
+nav a {color: #fff!important;}
+nav a:hover {color: red!important;}
+
+/* Highlight selection */
+*::selection {background-color: #000; color: #fff;}
+
+/* $NAVIGATION
+================================================== */
+nav {
+  width: 100%;
+}
+nav ul {
+/*  position: absolute;
+  bottom: 10px;*/
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+nav li {
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 400;
+  padding-right: 25px;
+  display: inline;
+}
+.nav-info {font-size: .6em;}
+
+/* $GENERAL STYLING
+================================================== */
+header {
+  position: relative;
+  text-align: center;
+  min-height: 30vh;
+  padding-bottom: 10px;
+  background: url(treeline.svg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-color: #A8E9FF;
+/*background: url(treeline.svg) center center no-repeat;*/
+}
+.header-info {position: absolute; bottom: 5px; color: #fff;}
+.right {right: 2%;}
+.left  {left: 2%;}
+.border {
+  padding: 5px;
+  border: 10px solid transparent;
+  -webkit-border-image: url(border.svg) 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(border.svg) 30 round; /* Opera 11-12.1 */
+  border-image: url(border.svg) 30 round;
+}
+section {margin-bottom: 75px;}
+.center {text-align: center;}
+.bold   {font-weight: 700;}
+.italic {font-style: italic;}
+.email  {word-wrap: break-word; font-weight: 100;}
+.section-title {padding: 5px 0; margin-bottom: 15px;}
+
+/* $WELCOME
+------------------------- */
+.welcome-img img {width: 50%; position: absolute; bottom: -50%;   left: 0;
+  right: 0; margin: 0 auto;}
+
+.intro  {color: #fff; padding: 50px 0; font-weight: 700; text-align: center;}
+
+
+/* $ABOUT
+------------------------- */
+.about-info {text-align: center;}
+.intro-text {margin-top: 10%; padding-top: 25px; padding-bottom: 75px; display: inline-block; text-align: center;}
+.intro-text h2 {padding-bottom: 15px;}
+.about p {padding: 15px;}
+.info {
+  display: inline-block;
+  text-align: center;
+  font-weight: 100;
+  padding: 50px 100px;
+}
+.info h3,
+.info h4 {padding-bottom: 15px;}
+
+/* $PROJECTS
+------------------------- */
+.caption {font-style: italic; font-weight: 100; padding-top: 10px;}
+.project-name {padding-top: 100px;}
+
+/* $CONTACT 
+------------------------- */
+.contact {
+  padding-top: 50px;
+  color: #fff;
+  background-color: #CD8544;
+  margin-bottom: 0;
+  text-align: center;
+}
+.contact h1 {padding: 15px 0;}
+.contact-info {text-align: left; display:inline-block; padding: 25px; padding-bottom: 50px;}
+.footer-img {height: 125px; width: auto; padding-top: 50px; margin: 0 auto;}
+
+/* $GRID
+================================================== */
+/* Row
+------------------------- */
+/* Makes row on page centered of specified width */
+.row {
+  zoom: 1;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* row that takes full width of page */
+.full-row {
+  zoom: 1;
+  width:  100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Row Clearing
+------------------------- */
+.row:before, .full-row:before {
+  content: "";
+  display: table;
+}
+.row:after, .full-row:after {
+  content: "";
+  display: table;
+  clear:   both;
+}
+/* Column
+------------------------- */
+/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+.pull, /* float a single object LEFT */
+.one-sixth,
+.one-fifth,
+.one-fourth,
+.one-third,
+.two-sixths,
+.two-fifths,
+.one-half,
+.two-fourths,
+.three-sixths,  
+.three-fifths,  
+.two-thirds,
+.four-sixths,   
+.three-fourths, 
+.four-fifths,   
+.five-sixths {
+  float: left;
+  margin-left: 4.1666666666667%;
+}
+.push {float: right;} /* float a single object RIGHT */
+.full-row .push {margin-right:  4.1666666666667%;}
+
+.one-sixth     {width: 13.194444444444%;}
+.one-fifth     {width: 16.666666666667%;}
+.one-fourth    {width: 21.875%;}
+.one-third,
+.two-sixths    {width: 30.555555555556%;}
+.two-fifths    {width: 37.5%;}
+.one-half,
+.two-fourths,
+.three-sixths  {width: 47.916666666667%;}
+.three-fifths  {width: 58.333333333333%;}
+.two-thirds,
+.four-sixths   {width: 65.277777777778%;}
+.three-fourths {width: 73.958333333333%;}
+.four-fifths   {width: 79.166666666667%;}
+.five-sixths   {width: 82.638888888889%;} 
+.first         {clear: both; margin-left: 0;}
+
+/* $MEDIA QUERIES 
+========================= */
+/* Mobile first. Using relative units */
+/*28.75em*/
+/* MOBILE */
+@media screen and (min-width: 0) and (max-width: 40.4em){
+  .row {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .one-sixth,
+  .one-fifth,
+  .one-fourth,
+  .one-third,
+  .two-sixths,
+  .two-fifths,
+  .one-half,
+  .two-fourths,
+  .three-sixths,  
+  .three-fifths,  
+  .two-thirds,
+  .four-sixths,   
+  .three-fourths, 
+  .four-fifths,   
+  .five-sixths {
+    margin: 0;
+    width: 100%
+  }
+  .email,
+  .phone {font-size: 1.5em;}
+  .info {padding: 0;}
+  .header-info {font-size: 75%;}
+  .welcome-img img {width: 75%; top: 5%;}
+}
+/* TABLET */
+@media screen and (min-width: 40.5em) and (max-width: 63.9em){
+  .row {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .one-sixth,
+  .one-fifth,
+  .one-fourth,
+  .one-third,
+  .two-sixths,
+  .two-fifths,
+  .one-half,
+  .two-fourths,
+  .three-sixths {width: 47.916666666667%;}
+  .three-fifths,  
+  .two-thirds,
+  .four-sixths,   
+  .three-fourths, 
+  .four-fifths,   
+  .five-sixths   {width: 100%}
+
+  .email,
+  .phone {font-size: 2em;}
+  .welcome-img img {width: 50%; top: 10%;}
+}
+/* COMPUTER */
+@media screen and (min-width: 64em){}

@@ -1,0 +1,103 @@
+<a name="top"></a>
+<header class="full-row">
+<!-- 	 <nav class="full-row">
+  	<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+  	</ul>
+  </nav> -->
+		<div class="header-info left">
+		  <h6 class="bold">Duane Didricksen</h6>
+		</div>
+<!-- <div class="intro one-third">
+
+</div> -->
+	  <div class="header-info right">
+	  	<h3 class="bold">206.391.2586</h3>
+		</div>
+
+  <div class="welcome-img">
+    <%= image_tag "Logo.svg" %>
+  </div>
+</header>
+<!-- START SECTION - $ABOUT -->
+<!-- <section class="welcome row center border">
+  <h3 class="bold">Serving Vashon since 1988</h3>
+</section>
+ -->
+<!-- <a name="about"></a>
+ -->
+
+<a name="about"></a>
+<section class="about-info row">
+
+<div class="intro-text">
+	<h2 class="bold">Custom Homes</h2>
+	<h3 class="italic">Serving Vashon since 1988</h3>
+</div>
+<br>
+  <div class="info border">
+  	<h4>Duane Didricksen, Builder</h4>
+  	<h3 class="bold">206.391.2586</h3>
+  	<h4 class="email"><a href="mailto:didricksenconst@gmail.com" title="Email" class="">didricksenconst@gmail.com</a></h4>
+ 	  <h4>#DUANEDC949RE</h4>
+	</div>
+</section>
+<!-- <section class="about full-row">
+	 <div class="one-half">
+		<h2>Your Local Builder</h2>
+		<div class="border">
+			<p>Didricksen Construction is a Vashon based company that specializes in home, remodels, and commercial projects. For over 28 years Didricksen Construction has built beautiful results and turned many clients into friends along the way.</p>
+			<p>With a team directly managed by Duane Didricksen they promise, safe, quality, on time, and on budget projects.</p>
+			<p>Call now to get started on your project!</p>
+		</div>
+	</div>
+</section> -->
+<!-- START SECTION - $PROJECTS -->
+<a name="projects"></a>
+<section class="projects full-row">
+	<div class="row">
+	<h2 class="section-title">Recent Projects</h2>
+		<h5>ACE Hardware, <span class="italic">Vashon Island</span></h5>
+		<h6 class="caption first">During Construction</h6>
+	  <%= link_to image_tag("projects/ACEpre-1.jpg"), image_path("projects/ACEpre-1.jpg"), class: "one-third first border", title: "ACE, During" %>
+	  <%= link_to image_tag("projects/ACEpre-2.jpg"), image_path("projects/ACEpre-2.jpg"), class: "one-third border", title: "ACE, During" %>
+	  <%= link_to image_tag("projects/ACEpre-3.jpg"), image_path("projects/ACEpre-3.jpg"), class: "one-third border", title: "ACE, During" %>
+	  <h6 class="caption first">After</h6>
+<!--<%= link_to image_tag("projects/ACEpost-4.jpg"), image_path("projects/ACEpost-4.jpg"), class: "one-half first border", title: "ACE, After" %> -->
+		<%= link_to image_tag("projects/ACEpost-5.jpg"), image_path("projects/ACEpost-5.jpg"), class: "one-third first border", title: "ACE, After" %>
+	  <%= link_to image_tag("projects/ACEpost-1.jpg"), image_path("projects/ACEpost-1.jpg"), class: "one-third border", title: "ACE, After" %>
+<!--<%= link_to image_tag("projects/ACEpost-3.jpg"), image_path("projects/ACEpost-3.jpg"), class: "one-half border", title: "ACE, After" %>-->
+		<%= link_to image_tag("projects/ACEpost-2.jpg"), image_path("projects/ACEpost-2.jpg"), class: "one-third border", title: "ACE, After" %>
+
+		<h5 class="project-name first">Small Bathroom Remodel, <span class="italic">Vashon Island</span></h5>
+		<%= link_to image_tag("projects/bathroom1.jpg"), image_path("projects/bathroom1.jpg"), class: "one-third first border", title: "Small Bathroom" %>
+		<%= link_to image_tag("projects/bathroom2.jpg"), image_path("projects/bathroom2.jpg"), class: "one-third border", title: "Small Bathroom" %>
+		<%= link_to image_tag("projects/bathroom3.jpg"), image_path("projects/bathroom3.jpg"), class: "one-third border", title: "Small Bathroom" %>
+	</div>
+</section>
+<a name="contact"></a>
+<section class="contact full-row">
+	<div class="row">
+	<h1>Get in Touch</h1>
+	</div>
+	<div class="contact-info row border">
+		<h1 class="phone"><i class="fa fa-phone"></i> 206.391.2586</h1>
+		<h3 class="email"><i class="fa fa-envelope"></i> <a href="mailto:didricksenconst@gmail.com" title="Email">didricksenconst@gmail.com</a></h3>
+	</div>
+	<div class="center">
+		<%= image_tag "Logo.svg", class: "footer-img" %>
+		<%= image_tag "bbb.jpg", class: "footer-img" %>
+	</div>
+</section>
+<script type="text/javascript">
+  $('.projects').magnificPopup({
+    delegate: 'a', // child items selector, by clicking on it popup will open
+    type: 'image',
+    gallery: {
+      // options for gallery
+      enabled: true
+    }
+  });
+</script>
