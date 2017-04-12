@@ -20,4 +20,5 @@
 //= require util
 //= require main
 //= require turbolinks
+//= require magnific-popup
 //= require_tree .
