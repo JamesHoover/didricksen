@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'projects/bathroom' => 'pages#bathroom'
   get 'projects/kitchen' => 'pages#kitchen'
   get 'projects/pizzahouse' => 'pages#pizzahouse'
+  get 'projects/commercial' => 'pages#commercial'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
