@@ -19,7 +19,7 @@
 
   <meta name="author" content="James Hoover">
   <meta name="publisher" content="James Hoover"/>
-  
+
   <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,17 +34,26 @@
 <body>
 
 <%= yield %>
-  <script type="text/javascript">
+<script type="text/javascript">
   $(document).ready(function() {
-      $('.image').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-img-mobile',
-        image: {
-          verticalFit: true
-        }
+    $('.image').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      closeOnContentClick: true,
+      image: {
+        verticalFit: true
+      },
+      // gallery:{
+      //   enabled: true,
+      //   navigateByImgClick: true,
+      //   arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+      //   tPrev: 'Previous (Left arrow key)',
+      //   tNext: 'Next (Right arrow key)',
+      //   tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
+      // }
     });
   });
-  </script>
+</script>
+
 </body>
 </html>

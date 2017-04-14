@@ -1909,6 +1909,9 @@
 		.icon > .label {
 			display: none;
 		}
+		a .icon.featured {
+			cursor: pointer;
+		}
 
 /* List */
 
@@ -2192,7 +2195,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 1000;
 	}
 
 		#header h1 {
